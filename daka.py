@@ -27,9 +27,9 @@ def tiwen_daka(s,headers):
             ti_for_title = str(time.strftime("%Y-%m-%d", time.localtime()))  # 获取时间，这个时间是放在SBRQ里面
             # 体温打卡数据,更改ID和UID
             data_tiWen = {
-                "ID": "XXXXXXXXX",
+                "ID": "9145117",
                 "SBRQ": ti_for_title + " 00:00:00",
-                "UID": "XXXXXXXX",
+                "UID": "1464458",
                 "UType": "1",
                 "WSTJSJ": ti_for_title + " 15:01:01",
                 "WSTW": "36.5",
@@ -61,6 +61,8 @@ if __name__ == '__main__':
     # 1.登陆并填体温
     s = login(headers=headers,data_person=data_person)
     tiwen_daka(s,headers=headers)
+    url="https://sc.ftqq.com/SCU163739T693b587417108c9468a0ad4211278cef60434acb48b66.send?text=今日刘真怡同学的体温已经全部上报成功~"
+    requests.post(url)
 
 
 
