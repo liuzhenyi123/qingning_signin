@@ -63,7 +63,7 @@ if __name__ == '__main__':
     tiwen_daka(s,headers=headers)
     url="https://sc.ftqq.com/SCU163739T693b587417108c9468a0ad4211278cef60434acb48b66.send?text=今日刘真怡同学的体温已经全部上报成功~"
     requests.post(url)
-
+  
 
 
 
